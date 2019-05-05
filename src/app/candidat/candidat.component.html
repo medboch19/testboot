@@ -1,0 +1,55 @@
+<div class="container spacer">
+    <div class="col-sm col-md col-lg">
+       <div class="panel-heading">Liste des contacts</div>
+  
+  
+      <table class="table table-striped">
+      <tr>
+        <th> ID</th>
+        <th> Cin</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th> Adresse</th>
+        <th>tél</th>
+        <th>N.Admin</th>
+        <th>Lieu Travail</th>
+        <th> @Travail</th>
+        <th> Niv</th>
+        <th> Grade</th>
+        <th> Tàches</th>
+        <th> DateL </th>
+        <th> Catégorie</th>
+        <th> Specialite</th>
+      </tr>
+
+      <tr *ngFor="let c of candidatData">
+          <td>{{c.id}}</td>
+        <td>{{c.cin}}</td>
+        <td>{{c.nom}}</td>
+        <td>{{c.prenom}}</td>
+        <td>{{c.adresse}}</td>
+        <td>{{c.telephone_personnel}}</td>
+        
+        <td>{{c.nomAdministration}}</td>
+        <td>{{c.lieuTravail}}</td>
+        <td>{{c.adresseTravail}}</td>
+        <td>{{c.niveauAcademique}}</td>
+        <td>{{c.gradeActuel}}</td>
+        <td>{{c.descriptionTaches}}</td>
+        <td>{{c.dateLimiteinscription}}</td>
+        <td>{{c.categorie}}</td>
+        <td>{{c.specialite}}</td>
+        <td>
+          <a (click)="onEditContact(c.id)" class="btn-default"> Edit </a>
+        </td>
+        <td>
+          <a (click)="onDletdContact(c.id)" class="btn-default"> Delete </a>
+        </td>
+      </tr>
+    </table>
+    
+
+  </div>
+
+
+</div>

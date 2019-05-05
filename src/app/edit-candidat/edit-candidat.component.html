@@ -1,0 +1,70 @@
+<div class="container spacer" >
+  <div class="col-sm-6 col-md-6 col-lg-6" style="background-color:orange">
+    <div class="panel-heading"> S'inscrire</div>
+    <div class="panel-body">
+      <div>
+
+      
+        <div class="form-group">
+          <label class="control-label">nom</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.nom"/>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">prenom</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.prenom"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Adresse</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.adresse"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Tél</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.telephone_personnel"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">NAdministration</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.nomAdministration"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Lieu Travail</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.lieuTravail"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Adresse Travail</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.adresseTravail"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Niveau</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.niveauAcademique"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Grade</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.gradeActuel"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Numero Cin</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.cin"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Taches</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.descriptionTaches"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">dateLimiteinscription</label>
+          <input class="form-control" type="date" [(ngModel)]="candidat.dateLimiteinscription"/>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">categorie</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.categorie"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Specialite</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.specialite"/>
+        </div>
+        <button class="btn-primary" (click)="updateCondidat()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

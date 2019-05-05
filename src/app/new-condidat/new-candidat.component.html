@@ -1,0 +1,89 @@
+<div class="row" >
+  <div class="col-sm-6 col-md-6 col-lg-6" style="background-color:rgb(30, 174, 241)">
+    
+ 
+ 
+
+      
+        <div class="form-group">
+          <label class="control-label">اللقب </label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.nom"/>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">الإسم</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.prenom"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">العنوان </label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.adresse"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">الهاتف</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.telephone_personnel"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">إسم المسؤول</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.nomAdministration"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">مقر العمل</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.lieuTravail"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">عنوان العمل</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.adresseTravail"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">المستوى الأكاديمي</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.niveauAcademique"/>
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-6" style="background-color:rgb(30, 174, 241)">
+
+
+        <div class="form-group">
+          <label class="control-label">الخطة الحالية</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.gradeActuel"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">رقم ب.ت.و</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.cin"/>
+        </div>
+
+     
+        <div class="form-group">
+          <label class="control-label">المهام</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.descriptionTaches"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">تاريخ التسجيل </label>
+          <input class="form-control" type="date" [(ngModel)]="candidat.dateLimiteinscription"/>
+        </div>
+
+
+        <div class="form-group">
+          <label class="control-label">الفئة</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.categorie"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">@Email البريد الالكتروني</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.adressemail"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">معرف الصف</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.idGrade"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label">التخصص</label>
+          <input class="form-control" type="text" [(ngModel)]="candidat.specialite"/>
+        </div>
+        <hr>
+        <button class="btn-warning" (click)="saveCondidat()">التسجيل</button>
+      </div>
+
+  </div>
+
